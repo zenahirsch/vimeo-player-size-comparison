@@ -29,13 +29,26 @@
   <div class="col no-custom-logo" style="width:45%; float: left; margin:0 2.5% 0 2.5%">
     <h2></h2>
 
-    <div class="normal-mode">
-      <h3>Mobile (small player)</h3>
-      <p>When the player is <strong>less than 415px wide</strong> (usually in the case of mobile), cards will be visible below the player until the next card is scheduled to appear.</p>
+    <div class="mobile-regular-mode">
+      <h3>Mobile (Small Player) - Regular Embed Code</h3>
+      <p>When the player is <strong>less than 415px wide</strong> (usually in the case of mobile), cards will be visible below the player until the next card is scheduled to appear. We recommend using the responsive embed code (see next example) to clean up the appearance of the player at this size.</p>
       <iframe src="https://player.vimeo.com/video/224353597" width="414" height="233" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <p class="dimensions">414x233</p>
       <p>The first card is the title, byline, and profile image.</p>
     </div>
+
+    <div class="mobile-responsive-mode">
+        <h3>Mobile (Small Player) - Responsive Embed Code</h3>
+        <p>When the player is <strong>less than 415px wide</strong> (usually in the case of mobile), cards will be visible below the player until the next card is scheduled to appear.</p>
+        <div style="width:414px">
+          <div class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;">
+            <iframe src="https://player.vimeo.com/video/224353597" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+        <p class="dimensions">414x233</p>
+        <p>The first card is the title, byline, and profile image.</p>
+      </div>
   </div>
+  <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>
